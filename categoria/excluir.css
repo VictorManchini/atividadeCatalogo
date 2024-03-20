@@ -1,0 +1,145 @@
+.container-main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+    gap: 0.3rem;
+}
+.container-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--color-background2);
+    height: 35vh;
+    width: 35vw;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: var(--box-shadow);
+}
+
+.container-form:hover{
+    box-shadow: none;
+}
+
+form{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    font-size: 24px;
+    padding: 25px;
+}
+
+form .titulo{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-bottom: 1.5rem;
+    font-size: 36px;
+    color: var(--color-danger);
+}
+
+form .nome{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 28px;
+}
+
+form .login{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+form .sim, form .nao{
+    justify-self: center;
+    margin-top: 1.5rem;
+    font-size: 24px;
+    width: 95%;
+    padding: 10px;
+    background-color: var(--color-danger);
+    color: var(--color-white2);
+    transition: all 0.3s ease;
+}
+
+form .sim{
+    border-radius: 15px 0px 0px 15px;
+}
+
+form .nao{
+    border-radius: 0px 15px 15px 0px;
+}
+
+form .sim:hover , form .nao:hover{
+    background-color: var(--color-dark);
+    color: var(--color-white);
+}
+
+.right-section{
+    margin-top: 1.4rem;
+    position: absolute;
+    left: 90%;
+}
+
+.right-section .nav{
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+}
+
+.right-section .nav button{
+    display: none;
+}
+
+.right-section .dark-mode{
+    background-color: var(--color-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.6rem;
+    width: 4.2rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+}
+
+.right-section .dark-mode span{
+    font-size: 1.2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-section .dark-mode span.active{
+    background-color: var(--color-danger);
+    color: white;
+    border-radius: var(--border-radius-1);
+}
+
+.right-section .nav .profile{
+    display: flex;
+    gap: 2rem;
+    text-align: right;
+}
+
+.iconHead a {
+    display: flex;
+}
+
+.erro{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 20px;
+    color: var(--color-danger);
+}

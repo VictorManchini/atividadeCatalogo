@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+    --color-primary: #cf6c9a;
+    --color-danger: #FF0060;
+    --color-white: #fff;
+    --color-white2: #fff;
+    --color-info-dark: #7d8da1;
+    --color-dark: #363949;
+    --color-dark2: #363949;
+    --color-light: rgba(200, 132, 160, 0.18);
+    --color-dark-variant: #677483;
+    --color-dark-variant2: #677483;
+    --color-background: #d6d6d6;
+    --color-background2:rgb(236, 236, 236);
+    --color-black: #000;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+.dark-mode-variables{
+    --color-primary: #6C9BCF;
+    --color-danger: #007eff;
+    --color-background: #181a1e;
+    --color-background2:#202528;
+    --color-white: #202528;
+    --color-white2: #fff;
+    --color-dark2: rgb(92, 92, 92);
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-dark-variant2: #dadada;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --color-black: #fff;
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+}
+
+body{
+    width: 100vm;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.88rem;
+    user-select: none;
+    overflow-x: hidden ;
+    color: var(--color-dark);
+    background-color: var(--color-background);
+}
+
+a{
+    color: var(--color-dark);
+}
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+h3{
+    font-weight: 500;
+    font-size: 0.87rem;
+}
+
+small{
+    font-size: 0.76rem;
+}
+
+p{
+    color: var(--color-dark-variant);
+}
+
+b{
+    color: var(--color-dark);
+}
+
+.danger{
+    color: var(--color-danger);
+}
+
+.container{
+    display: grid;
+    width: 11%;
+    margin: 0 2rem;
+    margin-right: 0;
+    gap: 1.8rem;
+    grid-template-columns: 12rem auto 23rem;
+}
+
+aside{
+    height: 100vh;
+}
+
+aside .toggle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+
+aside .toggle .logo a{
+    display: flex;
+    gap: 0.5rem;
+}
+
+aside .toggle .logo img{
+    width: 2rem;
+    height: 2rem;
+}
+
+aside .toggle .close{
+    padding-right: 1rem;
+    display: none;
+}
+
+aside .sidebar{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-background2);
+    box-shadow: var(--box-shadow);
+    border-radius: 15px;
+    height: 88vh;
+    position: relative;
+    top: 1.5rem;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+aside .sidebar:hover{
+    box-shadow: none;
+}
+
+aside .sidebar a{
+    display: flex;
+    align-items: center;
+    color: var(--color-info-dark);
+    height: 6rem;
+    gap: 1rem;
+    position: relative;
+    margin-left: 1rem;
+    transition: all 0.3s ease;
+}
+
+aside .sidebar a:last-child{
+    position: absolute;
+    gap: 2rem;
+    bottom: 2rem;
+    width: 100%;
+}
+
+aside .sidebar a.active{
+    width: 100%;
+    color: var(--color-primary);
+    background-color: var(--color-light);
+    margin-left: 0;
+}
+
+aside .sidebar a.active::before{
+    content: '';
+    width: 6px;
+    height: 36px;
+    background-color: var(--color-primary);
+}
+
+aside .sidebar a.active span{
+    color: var(--color-primary);
+    margin-left: calc(1rem - 5px);
+}
+
+aside .sidebar a:hover{
+    color: var(--color-primary);
+}
+
+aside .sidebar a:hover span{
+    margin-left: 0.6rem;
+    transition: all 0.3s ease;
+}

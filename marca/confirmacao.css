@@ -1,0 +1,87 @@
+.container-main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+    gap: 0.3rem;
+}
+
+.container-confirmacao{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-background2);
+    height: 25vh;
+    width: 25vw;
+    padding: 20px;
+    font-size: 28px;
+    text-align: center;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: var(--box-shadow);
+}
+
+p{
+    color: var(--color-danger);
+    font-weight: bolder;
+}
+
+.container-confirmacao:hover{
+    box-shadow: none;
+}
+
+.right-section{
+    margin-top: 1.4rem;
+    position: absolute;
+    left: 90%;
+}
+
+.right-section .nav{
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+}
+
+.right-section .nav button{
+    display: none;
+}
+
+.right-section .dark-mode{
+    background-color: var(--color-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.6rem;
+    width: 4.2rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+}
+
+.right-section .dark-mode span{
+    font-size: 1.2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-section .dark-mode span.active{
+    background-color: var(--color-danger);
+    color: white;
+    border-radius: var(--border-radius-1);
+}
+
+.right-section .nav .profile{
+    display: flex;
+    gap: 2rem;
+    text-align: right;
+}
+
+.iconHead a {
+    display: flex;
+}

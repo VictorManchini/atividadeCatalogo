@@ -1,0 +1,133 @@
+.container-main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+    gap: 0.3rem;
+}
+
+.container-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--color-background2);
+    height: 30vh;
+    width: 30vw;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s ease;
+}
+
+.container-form:hover{
+    box-shadow: none;
+}
+
+form{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container-form form h1{
+    transition: all 0.3s ease;
+    margin-bottom: 1.5rem;
+    font-size: 36px;
+    color: var(--color-danger);
+}
+
+.container-form form .labelNomeCategoria{
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+}
+
+.container-form form .inputNomeCategoria{
+    font-size: 24px;
+    padding: 1px;
+    border-radius: 10px;
+    background-color: var(--color-light);
+    margin-bottom: 0.5rem;
+    color: var(--color-black);
+}
+
+.container-form form .btn-Cadastrar{
+    font-size: 16px;
+    padding: 9px;
+    border-radius: 10px;
+    background-color: var(--color-danger);
+    color: var(--color-white2);
+    transition: all 0.3s ease;
+}
+
+.container-form form .btn-Cadastrar:hover{
+    color: var(--color-white);
+    background-color: var(--color-dark);
+}
+
+.container-form form label.error{
+    font-size: 18px;
+    color: var(--color-danger);
+    margin-bottom: 0.5rem;
+}
+
+.right-section{
+    margin-top: 1.4rem;
+    position: absolute;
+    left: 90%;
+}
+
+.right-section .nav{
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+}
+
+.right-section .nav button{
+    display: none;
+}
+
+.right-section .dark-mode{
+    background-color: var(--color-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.6rem;
+    width: 4.2rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+}
+
+.right-section .dark-mode span{
+    font-size: 1.2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-section .dark-mode span.active{
+    background-color: var(--color-danger);
+    color: white;
+    border-radius: var(--border-radius-1);
+}
+
+.right-section .nav .profile{
+    display: flex;
+    gap: 2rem;
+    text-align: right;
+}
+
+.categoria-ja-cadastrada{
+    font-size: 20px;
+    color: var(--color-danger);
+    align-self: center;
+    margin-top: 1rem;
+}

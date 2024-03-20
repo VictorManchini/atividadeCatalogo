@@ -1,0 +1,150 @@
+.container-main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+    gap: 0.3rem;
+}
+.container-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-background2);
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s ease;
+    border-radius: 15px;
+}
+
+.container-form:hover{
+    box-shadow: none;
+}
+
+form{
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    display: flex;
+    align-self: center;
+    font-size: 42px;
+    margin-bottom: 4rem;
+    color: var(--color-danger);
+}
+
+form div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 50px;
+    margin-bottom: 4rem;
+}
+
+
+form label:not(.error){
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: inline-block;
+    justify-self: baseline;
+    align-self: center;
+    font-size: 28px;
+    color: var(--color-dark);
+}
+
+form input{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    width: 50rem;
+    padding: 5px;
+    font-size: 28px;
+    border-radius: 10px;
+    background-color: var(--color-light);
+    color: var( --color-black);
+}
+
+form .btn-alterar{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    font-size: 32px;
+    width: 150px;
+    padding: 14px;
+    border-radius: 10px;
+    background-color: var(--color-danger);
+    color: var(--color-white2);
+    transition: all 0.3s ease;
+}
+
+form .btn-alterar:hover{
+    background-color: var(--color-dark);
+    color: var(--color-white);
+}
+
+.right-section{
+    margin-top: 1.4rem;
+    position: absolute;
+    left: 90%;
+}
+
+.right-section .nav{
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+}
+
+.right-section .nav button{
+    display: none;
+}
+
+.right-section .dark-mode{
+    background-color: var(--color-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.6rem;
+    width: 4.2rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+}
+
+.right-section .dark-mode span{
+    font-size: 1.2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-section .dark-mode span.active{
+    background-color: var(--color-danger);
+    color: white;
+    border-radius: var(--border-radius-1);
+}
+
+.right-section .nav .profile{
+    display: flex;
+    gap: 2rem;
+    text-align: right;
+}
+
+.iconHead a {
+    display: flex;
+}
+
+.marca-ja-cadastrada{
+    font-size: 28px;
+    color: var(--color-danger);
+    align-self: center;
+    margin-top: 2rem;
+}
